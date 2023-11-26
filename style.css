@@ -126,3 +126,17 @@ p{
     border-radius: 5px;
     background-color: var(--red);
 }
+.btn{
+    width: 100%;
+}
+#NextRound, #endGame{
+ height: 30px;
+ border-radius: 10px;
+ background-color: var(--green);
+ color: white;
+ cursor: pointer;
+
+}
+#endGame{
+    background: var(--red);
+}
