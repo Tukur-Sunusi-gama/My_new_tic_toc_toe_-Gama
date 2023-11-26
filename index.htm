@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic tok toi game</title>
 </head>
 <body>
-    <h1>tic toc toe game</h1>
+    
     <div class="container">
+        <h1>tic toc toe game</h1>
         <!-- this container will disapper if the user click the start button and re apper if the user click end game -->
         <div class="start_panel">
-            <label for="Player1"><input type="text" placeholder="Player 1 Name"></label>
-            <label for="Player2"><input type="text" placeholder="Player 2 Name"></label>
-            <button id="start">Start</button> 
+             <input type="text" placeholder="Player 1 Name" class="a1" autofocus>
+             <input type="text" placeholder="Player 2 Name" class="a1"> 
+            <button id="start" class="a1">Start</button> 
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit dolore possimus soluta itaque deleniti dolorum
+                 debitis sit dolor fugiat iure. Eveniet, itaque cupiditate voluptas nam quia assumenda reiciendis corporis ut!
+            </p>
         </div>
     <div class="main_game">
         <div class="diplay-panel">
-            <div id="dis1"></div>
-            <div id="dis1"></div>
+            <div id="dis1">player1: </div>
+            <div id="dis2">player2: </div>
         <div id="player1name"></div>
         <div id="player1name"></div>
-        <div class="roundDispaly">Round <span class="count"></span></div>
+        <div class="roundDispaly"><marquee>Round:<span class="count"></span></marquee>  </div>
         </div>
      <div class="card">
         <div class="row">
@@ -45,5 +51,6 @@
      </div>
     </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

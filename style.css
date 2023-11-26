@@ -1,0 +1,128 @@
+:root{
+    --black:#000000;
+    --blue:#0F6292;
+    --green:#16FF00;
+    --yellow:#FFED00;
+    --white:#ffffff;
+    --red:#D71313;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Ephesis&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--black) ;
+    width: 100%;
+    height: 100vh;  
+}
+.container{ 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background: var(--blue);
+    width: 300px; 
+    height: 500px; 
+    border-radius: 10px;
+    border-left: 10px double var(--black);
+    border-right: 10px double var(--black);
+}
+h1{
+    color: var(--white);
+    text-align: center;
+    font-size: 30px; 
+    font-family: 'Bungee Spice', sans-serif;
+    margin: 20px 0 30px 0;
+}
+.start_panel{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    align-content: center;
+    background: var(--red);
+    width: 280px; 
+    height: 450px; 
+    border-left: 5px solid var(--black);
+    border-right: 5px solid var(--black);
+    top: 140px;
+    display: none;
+}
+.a1{
+    margin: 10px auto;
+    width: 90%;
+    height: 30px;  
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+    color: var(--blue);
+}
+.start_panel input{
+    border-bottom: var(--yellow) solid 2px;
+}
+#start{
+    border: inset var(--green) 3px;
+    border-radius: 5px;
+    background: var(--green);
+    color: var(--blue);
+    font-weight: 900;
+    font-family: 'Bungee Spice', sans-serif; 
+}
+p{
+    padding: 20px;
+    font-family:'Ephesis', cursive ;
+    color: var(--yellow);
+}
+
+.diplay-panel{
+    position: relative;
+   width: 100%;  
+   margin-bottom: 20px;
+
+}
+#dis1, #dis2{
+   width: 100%;
+   height: 25px;
+   background-color: var(--black);
+   border: groove var(--white) 1px;
+   margin-bottom: 10px;
+   color: var(--white); 
+   padding-left: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.roundDispaly{
+    text-align: start;
+    font-size: 20px;
+    color: var(--red);
+    font-family: 'Courier New';
+    font-weight: bold;
+    width: 100%; 
+    border-left: 1px inset var(--blue);
+    border-right: 1px outset var(--blue);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 170px;
+    background-color: var(--blue);
+    margin-bottom: 40px;
+    border: none;
+}
+.row{
+    display: flex;
+    height: calc(170px/3); 
+    width: 100%; 
+}
+.cell{
+    height: calc(170px/3);
+    width: calc(100%/3); 
+    border:1px solid goldenrod;
+    border-radius: 5px;
+    background-color: var(--red);
+}
